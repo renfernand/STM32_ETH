@@ -127,6 +127,37 @@ void MX_LWIP_Init(void)
 /* USER CODE END 4 */
 #endif
 
+int lwipGetIpAddress(unsigned char *pucIpAddress)
+{
+	*pucIpAddress++ = IP_ADDRESS[0];
+	*pucIpAddress++ = IP_ADDRESS[1];
+	*pucIpAddress++ = IP_ADDRESS[2];
+	*pucIpAddress++ = IP_ADDRESS[3];
+
+	return 1;
+}
+
+int lwipGetDefaultGateway(unsigned char *pucIpGateway)
+{
+	*pucIpGateway++ = GATEWAY_ADDRESS[0];
+	*pucIpGateway++ = GATEWAY_ADDRESS[1];
+	*pucIpGateway++ = GATEWAY_ADDRESS[2];
+	*pucIpGateway++ = GATEWAY_ADDRESS[3];
+
+	return 1;
+}
+
+int lwipGetSubnetMask(unsigned char *pucSubnetMask)
+{
+
+	*pucSubnetMask++ = NETMASK_ADDRESS[0];
+	*pucSubnetMask++ = NETMASK_ADDRESS[1];
+	*pucSubnetMask++ = NETMASK_ADDRESS[2];
+	*pucSubnetMask++ = NETMASK_ADDRESS[3];
+
+  return 1;
+}
+
 /**
   * @brief  Notify the User about the network interface config status
   * @param  netif: the network interface

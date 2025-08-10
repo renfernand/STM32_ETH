@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#define LWIP_DEBUG 1
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

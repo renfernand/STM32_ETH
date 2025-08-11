@@ -8,6 +8,7 @@ But The wizard from the cubeIDE cannot answer the ethernet with a wrong way (for
 * create a server conection (port 8080) that reproduce a echo frame (send the same that receive). 
 * create a telnet conection (port 23) that has a little menu with some basic commands (user e pass=ufu)
 * enable de DBG_LOG in the serial (A way to enable e disable the messages to the UART3)
+obs: Seems that the problem is the ethernet pins that is wrong in the default
 
 how can I create this (first program):
 1) Using de CubeIDE I created a basic program enabling FRERTOS and LWIP.

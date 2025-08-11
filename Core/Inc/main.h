@@ -57,10 +57,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define B1_Pin GPIO_PIN_13
-#define B1_GPIO_Port GPIOC
-#define MCO_Pin GPIO_PIN_0
-#define MCO_GPIO_Port GPIOH
+#define LED_RED_Pin GPIO_PIN_14
+#define LED_RED_GPIO_Port GPIOB
 #define RMII_MDC_Pin GPIO_PIN_1
 #define RMII_MDC_GPIO_Port GPIOC
 #define RMII_REF_CLK_Pin GPIO_PIN_1
@@ -76,31 +74,18 @@ void Error_Handler(void);
 #define RMII_TXD1_Pin GPIO_PIN_13
 #define RMII_TXD1_GPIO_Port GPIOB
 #define STLK_VCP_RX_Pin GPIO_PIN_8
-#define STLK_VCP_RX_GPIO_Port GPIOD
-#define STLK_VCP_TX_Pin GPIO_PIN_9
-#define STLK_VCP_TX_GPIO_Port GPIOD
-#define USB_FS_PWR_EN_Pin GPIO_PIN_10
-#define USB_FS_PWR_EN_GPIO_Port GPIOD
-#define USB_FS_OVCR_Pin GPIO_PIN_7
-#define USB_FS_OVCR_GPIO_Port GPIOG
-#define USB_FS_VBUS_Pin GPIO_PIN_9
-#define USB_FS_VBUS_GPIO_Port GPIOA
-#define USB_FS_ID_Pin GPIO_PIN_10
-#define USB_FS_ID_GPIO_Port GPIOA
-#define SWDIO_Pin GPIO_PIN_13
-#define SWDIO_GPIO_Port GPIOA
-#define SWCLK_Pin GPIO_PIN_14
-#define SWCLK_GPIO_Port GPIOA
 #define RMII_TX_EN_Pin GPIO_PIN_11
 #define RMII_TX_EN_GPIO_Port GPIOG
 #define RMII_TXD0_Pin GPIO_PIN_13
 #define RMII_TXD0_GPIO_Port GPIOG
-#define SWO_Pin GPIO_PIN_3
-#define SWO_GPIO_Port GPIOB
-#define LED_RED_Pin GPIO_PIN_14
-#define LED_RED_GPIO_Port GPIOB
-#define LED_YELLOW_Pin GPIO_PIN_1
-#define LED_YELLOW_GPIO_Port GPIOE
+
+#define STLK_VCP_RX_GPIO_Port GPIOD
+#define STLK_VCP_TX_Pin GPIO_PIN_9
+#define STLK_VCP_TX_GPIO_Port GPIOD
+#define SWDIO_Pin GPIO_PIN_13
+#define SWDIO_GPIO_Port GPIOA
+#define SWCLK_Pin GPIO_PIN_14
+#define SWCLK_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
